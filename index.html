@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>University Website</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<script type="text/javascript" src="custom.js"></script>
+<link rel="icon" type="image/png" href="images/diu_icon.png">
 </head>
 <body>
     <section class="header">
     	<nav>
     		<a href="index.html"><img src="images/logo.png"></a>
     		<div class="nav-links" id="navLinks">
-    			<i class="fas fa-window-close"></i>
+    			<i class="fas fa-window-close" onclick="hideMenu()"></i>
     			<ul>
     				<li><a href="">HOME</a></li>
     				<li><a href="">ABOUT</a></li>
@@ -27,18 +27,178 @@
     				<li><a href="">CONTACT</a></li>
     			</ul>
     		</div>
-    		<i class="fas fa-bars"></i>
+    		<i class="fas fa-bars" onclick="showMenu()"></i>
     	</nav>
 
   <div class="text-box">
   	<h1>World's Largerest University</h1>
-  	<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+  	<p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet,<br>Vestibulum ante ipsum primis in faucibus orci luctus</p>
   	<a href="" class="hero-btn">Visit Us for Know More</a>
   	
   </div>	
     	
-    </section> 
+    </section>
+<!----------------COURSE------------------------>
+<section class="course">
+    <h1>Course We Offer</h1>
+    <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
 
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. 
+                Donec rutrum congue leo eget malesuada.</p>
+
+        </div>
+
+        <div class="course-col">
+            <h3>Hounors</h3>
+            <p>Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. 
+                Donec rutrum congue leo eget malesuada.</p>
+
+        </div>
+
+        <div class="course-col">
+            <h3>Masteres</h3>
+            <p>Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Pellentesque in ipsum id orci porta dapibus. 
+                Donec rutrum congue leo eget malesuada.</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-------------------CAMPUS--------------------------------->
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam quam vehicula elementum sed sit amet dui.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+            </div>
+        <div class="campus-col">
+            <img src="images/newyork.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+            </div>
+        <div class="campus-col">
+            <img src="images/washington.png">
+        <div class="layer">
+            <h3>WASHINGTONG</h3>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-----------------------FACILITIES--------------------------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
+            Cubilia Curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Largerest Playground</h3>
+            <p>Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
+            Cubilia Curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.
+            Cubilia Curae donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-----------------------Testimonials-------------------------->
+<section class="testimonials">
+    <h1>What Our Students Says</h1>
+    <P>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</P>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                    amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                </p>
+                <h3>Cristiana Barley</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p>Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                    amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                </p>
+                <h3>David Thron</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-------------------Call to Action----------------------->
+<section class="cta">
+    <h1>Enroll For Our Various Courses From<br> Anywhere from The World</h1>
+    <a href="" class="hero-btn">Contact Us</a>
+
+</section>
+
+<!-----------------------Footer------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Donec sollicitudin molestie malesuada. Mauris blandit<br> aliquet elit eget tincidunt nibh pulvinar a.</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="far fa-heart"></i> <a href="#"></a> by Web Builder-IT</p>
+
+</section>
+
+
+
+
+<!---------------JavaScript for Toggle Menu------------------->
+    <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+    </script> 
+  
 
 
 
